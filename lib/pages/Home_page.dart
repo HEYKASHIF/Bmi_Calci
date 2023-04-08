@@ -14,7 +14,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(
+        elevation: 0,
         title: Text('BMI CALCULATOR'),
         centerTitle: true,
       ),
@@ -57,6 +59,12 @@ class _HomePageState extends State<HomePage> {
                       color: Color(0xFF8D8E98),
                     ),
                   ),
+                  Slider(
+                    value: 140,
+                    min: 100,
+                    max: 300,
+                    onChanged: null,
+                  )
                 ],
               ),
               color: Colors.pink,
