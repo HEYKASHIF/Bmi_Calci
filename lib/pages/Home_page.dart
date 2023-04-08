@@ -20,30 +20,49 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: ReusableCard(
-                  CardChild: IconContent(
-                    icon: FontAwesomeIcons.mars,
-                    label: 'MALE',
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: ReusableCard(
+                    CardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: 'MALE',
+                    ),
+                    color: Colors.pink,
+                    onPress: () {},
                   ),
-                  color: Colors.pink,
-                  onPress: () {},
                 ),
-              ),
-              Expanded(
-                child: ReusableCard(
-                  CardChild: IconContent(
-                    icon: FontAwesomeIcons.mars,
-                    label: 'MALE',
+                Expanded(
+                  child: ReusableCard(
+                    CardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: 'MALE',
+                    ),
+                    color: Colors.pink,
+                    onPress: () {},
                   ),
-                  color: Colors.pink,
-                  onPress: () {},
                 ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: ReusableCard(
+              CardChild: Column(
+                children: [
+                  Text(
+                    'HEIGHT',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Color(0xFF8D8E98),
+                    ),
+                  ),
+                ],
               ),
-            ],
-          )
+              color: Colors.pink,
+              onPress: () {},
+            ),
+          ),
         ],
       ),
     );
