@@ -74,6 +74,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: ReusableCard(
               CardChild: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     'HEIGHT',
@@ -82,12 +83,21 @@ class _HomePageState extends State<HomePage> {
                       color: Color(0xFF8D8E98),
                     ),
                   ),
-                  Slider(
-                    value: 140,
-                    min: 100,
-                    max: 300,
-                    onChanged: null,
-                  )
+                  SliderTheme(
+                    data: SliderTheme.of(context).copyWith(
+                      activeTickMarkColor: Colors.red,
+                    ),
+                    child: Slider(
+                      value: Height.toDouble(),
+                      min: 100,
+                      max: 300,
+                      onChanged: (double newHeight) {
+                        setState(() {
+                          Height = newHeight.round();
+                        });
+                      },
+                    ),
+                  ),
                 ],
               ),
               color: Colors.pink,
