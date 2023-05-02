@@ -3,6 +3,11 @@ import 'package:bmi_calci/widgets/Reusable_Card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+enum Gender {
+  male,
+  female,
+}
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -14,8 +19,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Color.fromARGB(255, 47, 48, 49),
       appBar: AppBar(
+        backgroundColor: Colors.black,
         elevation: 0,
         title: Text('BMI CALCULATOR'),
         centerTitle: true,
@@ -38,8 +44,8 @@ class _HomePageState extends State<HomePage> {
                 Expanded(
                   child: ReusableCard(
                     CardChild: IconContent(
-                      icon: FontAwesomeIcons.mars,
-                      label: 'MALE',
+                      icon: FontAwesomeIcons.venus,
+                      label: 'FEMALE',
                     ),
                     color: Colors.pink,
                     onPress: () {},
