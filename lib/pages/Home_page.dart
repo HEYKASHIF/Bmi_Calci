@@ -45,7 +45,11 @@ class _HomePageState extends State<HomePage> {
                     color: SelectedGender == Gender.male
                         ? ActiveCardColor
                         : InactiveCardColor,
-                    onPress: () {},
+                    onPress: () {
+                      setState(() {
+                        SelectedGender = Gender.male;
+                      });
+                    },
                   ),
                 ),
                 Expanded(
@@ -57,7 +61,11 @@ class _HomePageState extends State<HomePage> {
                     color: SelectedGender == Gender.female
                         ? ActiveCardColor
                         : InactiveCardColor,
-                    onPress: () {},
+                    onPress: () {
+                      setState(() {
+                        SelectedGender = Gender.female;
+                      });
+                    },
                   ),
                 ),
               ],
