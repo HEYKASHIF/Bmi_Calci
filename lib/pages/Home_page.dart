@@ -1,3 +1,4 @@
+import 'package:bmi_calci/constant/colors.dart';
 import 'package:bmi_calci/widgets/Icon_Content.dart';
 import 'package:bmi_calci/widgets/Reusable_Card.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Gender SelectedGender = Gender.female;
+  int Height = 178;
+  int Weight = 55;
+  int Age = 20;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +42,9 @@ class _HomePageState extends State<HomePage> {
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
                     ),
-                    color: Colors.pink,
+                    color: SelectedGender == Gender.male
+                        ? ActiveCardColor
+                        : InactiveCardColor,
                     onPress: () {},
                   ),
                 ),
@@ -47,7 +54,9 @@ class _HomePageState extends State<HomePage> {
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',
                     ),
-                    color: Colors.pink,
+                    color: SelectedGender == Gender.female
+                        ? ActiveCardColor
+                        : InactiveCardColor,
                     onPress: () {},
                   ),
                 ),
