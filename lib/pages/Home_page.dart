@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'HEIGHT',
+                    'HEIGHT(cm)',
                     style: TextStyle(
                         fontSize: 18,
                         color: Colors.black,
