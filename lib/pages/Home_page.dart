@@ -85,8 +85,10 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
-                      activeTickMarkColor: Colors.red,
-                    ),
+                        activeTrackColor: Colors.pink,
+                        inactiveTrackColor: Colors.black,
+                        thumbColor: Colors.pink,
+                        overlayColor: Colors.pink),
                     child: Slider(
                       value: Height.toDouble(),
                       min: 100,
@@ -100,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              color: Colors.pink,
+              color: Colors.white,
               onPress: () {},
             ),
           ),
