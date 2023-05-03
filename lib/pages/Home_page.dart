@@ -148,7 +148,36 @@ class _HomePageState extends State<HomePage> {
                   onPress: () {},
                 ),
               ),
-              // Expanded(child: child),
+              Expanded(
+                child: ReusableCard(
+                  CardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'AGE',
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        Age.toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 50,
+                          color: Colors.black,
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [],
+                      )
+                    ],
+                  ),
+                  color: Colors.white,
+                  onPress: () {},
+                ),
+              ),
             ],
           )
         ],
