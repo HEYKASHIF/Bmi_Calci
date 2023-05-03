@@ -116,6 +116,41 @@ class _HomePageState extends State<HomePage> {
               onPress: () {},
             ),
           ),
+          Row(
+            children: [
+              Expanded(
+                child: ReusableCard(
+                  CardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'WEIGHT(Kg)',
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        Weight.toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 50,
+                          color: Colors.black,
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [],
+                      )
+                    ],
+                  ),
+                  color: Colors.white,
+                  onPress: () {},
+                ),
+              ),
+              // Expanded(child: child),
+            ],
+          )
         ],
       ),
     );
