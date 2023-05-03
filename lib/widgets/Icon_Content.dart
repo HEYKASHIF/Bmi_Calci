@@ -13,6 +13,7 @@ class IconContent extends StatelessWidget {
         Icon(
           icon,
           size: 80,
+          color: Colors.white,
         ),
         SizedBox(
           height: 20,
@@ -20,10 +21,10 @@ class IconContent extends StatelessWidget {
         Text(
           label,
           style: TextStyle(
-              fontSize: 18,
-              color: Color(
-                0xFF8D8E98,
-              )),
+            fontSize: 18,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
         )
       ],
     );
