@@ -79,8 +79,16 @@ class _HomePageState extends State<HomePage> {
                   Text(
                     'HEIGHT',
                     style: TextStyle(
-                      fontSize: 18,
-                      color: Color(0xFF8D8E98),
+                        fontSize: 18,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    Height.toString(),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 50,
+                      color: Colors.black,
                     ),
                   ),
                   SliderTheme(
