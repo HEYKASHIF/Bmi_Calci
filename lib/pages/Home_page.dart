@@ -39,6 +39,7 @@ class _HomePageState extends State<HomePage> {
                 Expanded(
                   child: ReusableCard(
                     CardChild: IconContent(
+                      color: Colors.blue,
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
                     ),
@@ -55,6 +56,7 @@ class _HomePageState extends State<HomePage> {
                 Expanded(
                   child: ReusableCard(
                     CardChild: IconContent(
+                      color: Colors.pink,
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',
                     ),
@@ -93,10 +95,10 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
-                        activeTrackColor: Colors.pink,
+                        activeTrackColor: Color.fromARGB(255, 148, 241, 9),
                         inactiveTrackColor: Colors.black,
-                        thumbColor: Colors.pink,
-                        overlayColor: Colors.pink),
+                        thumbColor: Color.fromARGB(255, 93, 227, 10),
+                        overlayColor: Color.fromARGB(255, 38, 234, 12)),
                     child: Slider(
                       value: Height.toDouble(),
                       min: 100,
