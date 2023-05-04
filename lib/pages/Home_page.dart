@@ -21,6 +21,18 @@ class _HomePageState extends State<HomePage> {
   int Height = 178;
   int Weight = 55;
   int Age = 20;
+  void plus(plus) {
+    setState(() {
+      plus++;
+    });
+  }
+
+  void minus(minus) {
+    setState(() {
+      minus--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,11 +153,31 @@ class _HomePageState extends State<HomePage> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [],
+                          children: [
+                            RawMaterialButton(
+                              onPressed: () {
+                                setState(() {
+                                  Weight++;
+                                });
+                              },
+                              child: Icon(FontAwesomeIcons.plus),
+                            ),
+                            SizedBox(
+                              width: 1,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                setState(() {
+                                  Weight--;
+                                });
+                              },
+                              child: Icon(FontAwesomeIcons.minus),
+                            ),
+                          ],
                         )
                       ],
                     ),
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 135, 9, 9),
                     onPress: () {},
                   ),
                 ),
