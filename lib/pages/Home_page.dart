@@ -143,24 +143,28 @@ class _HomePageState extends State<HomePage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            RawMaterialButton(
-                              onPressed: () {
-                                setState(() {
-                                  Weight++;
-                                });
-                              },
-                              child: Icon(FontAwesomeIcons.plus),
+                            Expanded(
+                              child: RawMaterialButton(
+                                onPressed: () {
+                                  setState(() {
+                                    Weight++;
+                                  });
+                                },
+                                child: Icon(FontAwesomeIcons.plus),
+                              ),
                             ),
                             SizedBox(
                               width: 1,
                             ),
-                            RawMaterialButton(
-                              onPressed: () {
-                                setState(() {
-                                  Weight--;
-                                });
-                              },
-                              child: Icon(FontAwesomeIcons.minus),
+                            Expanded(
+                              child: RawMaterialButton(
+                                onPressed: () {
+                                  setState(() {
+                                    Weight--;
+                                  });
+                                },
+                                child: Icon(FontAwesomeIcons.minus),
+                              ),
                             ),
                           ],
                         )
