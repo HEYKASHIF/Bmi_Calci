@@ -197,9 +197,11 @@ class _HomePageState extends State<HomePage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            RawMaterialButton(
-                              onPressed: () {},
-                              child: Icon(FontAwesomeIcons.plus),
+                            Expanded(
+                              child: RawMaterialButton(
+                                onPressed: () {},
+                                child: Icon(FontAwesomeIcons.plus),
+                              ),
                             ),
                             Expanded(
                               child: RawMaterialButton(
