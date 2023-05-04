@@ -22,12 +22,6 @@ class _HomePageState extends State<HomePage> {
   int Weight = 55;
   int Age = 20;
 
-  void minus(minus) {
-    setState(() {
-      minus--;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
