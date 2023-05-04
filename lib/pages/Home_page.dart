@@ -206,7 +206,11 @@ class _HomePageState extends State<HomePage> {
                             ),
                             Expanded(
                               child: RawMaterialButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  setState(() {
+                                    Age--;
+                                  });
+                                },
                                 child: Icon(FontAwesomeIcons.minus),
                               ),
                             )
