@@ -153,9 +153,6 @@ class _HomePageState extends State<HomePage> {
                                 child: Icon(FontAwesomeIcons.plus),
                               ),
                             ),
-                            SizedBox(
-                              width: 1,
-                            ),
                             Expanded(
                               child: RawMaterialButton(
                                 onPressed: () {
