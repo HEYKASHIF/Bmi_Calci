@@ -200,6 +200,10 @@ class _HomePageState extends State<HomePage> {
                             RawMaterialButton(
                               onPressed: () {},
                               child: Icon(FontAwesomeIcons.plus),
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {},
+                              child: Icon(FontAwesomeIcons.minus),
                             )
                           ],
                         )
