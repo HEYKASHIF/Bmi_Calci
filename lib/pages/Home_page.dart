@@ -21,11 +21,6 @@ class _HomePageState extends State<HomePage> {
   int Height = 178;
   int Weight = 55;
   int Age = 20;
-  void plus(plus) {
-    setState(() {
-      plus++;
-    });
-  }
 
   void minus(minus) {
     setState(() {
